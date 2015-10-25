@@ -5,7 +5,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
+<<<<<<< HEAD
   gem 'sqlite3'
+=======
+gem 'sqlite3'
+>>>>>>> 983052c08ae877e752f6f671ce947f8df9491fc9
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

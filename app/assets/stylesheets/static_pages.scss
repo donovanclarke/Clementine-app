@@ -21,9 +21,16 @@ p {
 .navbar-nav {
   float: right;
 }
+
+.navbar-brand {
+  text-decoration: none;
+}
 // Body Text Area
 #body-area {
   padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .site-logo {
@@ -36,15 +43,13 @@ height: auto;
 .footer {
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 20px;
   color: white;
   background-color: black;
 
 }
 .footer-text {
   float: left;
-  padding-top: 20px;
-  padding-left: 20px;
 }
 
 // Contact Page
@@ -57,4 +62,11 @@ height: auto;
   color: red;
   background-color: white;
   text-decoration: none;
+}
+
+// Landing Page
+
+#carousel {
+  padding-left: 50px;
+  padding-right: 50px;
 }

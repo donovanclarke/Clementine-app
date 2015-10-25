@@ -7,6 +7,24 @@
   padding-left: 40%;
 }
 
+.product-title {
+  font-size: 1.3em;
+  text-align: center;
+}
+.product-thumbnail {
+  width: 200px;
+  height: auto;
+}
+
+.product-show-edit-delete {
+  text-align: center;
+}
+
+.product-show-edit-delete a:hover {
+  color: red;
+  text-decoration: none;
+  background-color: white;
+}
 // new product page
 
 #new-product .btn-primary {

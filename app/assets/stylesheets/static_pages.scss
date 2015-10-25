@@ -13,6 +13,10 @@ h2 {
   font-family: futura, sans-serif;
   text-align: center;
 }
+
+p {
+  font-family: futura, sans-serif;
+}
 // Navigation
 .navbar-nav {
   float: right;
@@ -24,16 +28,33 @@ h2 {
 
 .site-logo {
 padding-left: 40%;
+width: 70px;
+height: auto;
 }
 
 // Footer
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
+  color: white;
+  background-color: black;
 
 }
 .footer-text {
   float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+// Contact Page
+
+#contact-page {
+  text-align: center;
+}
+
+#contact-page a:hover {
+  color: red;
+  background-color: white;
+  text-decoration: none;
 }

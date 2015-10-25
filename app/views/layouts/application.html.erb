@@ -35,8 +35,9 @@
     <div class="container-fluid" id="body-area">
       <h1>Welcome to an Example App</h1>
       <h2>Your source for example apps</h2>
-
-      <%= image_tag("sitelogo.png") %>
+      <div class="site-logo">
+        <%= image_tag("sitelogo.png") %>
+      </div>
       <%= yield %>
     </div>
     <footer class="footer">

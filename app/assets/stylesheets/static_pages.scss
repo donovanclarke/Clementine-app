@@ -8,6 +8,11 @@ h1 {
   color: red;
   text-align: center;
 }
+
+h2 {
+  font-family: futura, sans-serif;
+  text-align: center;
+}
 // Navigation
 .navbar-nav {
   float: right;
@@ -17,13 +22,17 @@ h1 {
   padding-top: 50px;
 }
 
+.site-logo {
+padding-left: 40%;
+}
+
 // Footer
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
-  
+
 }
 .footer-text {
   float: left;

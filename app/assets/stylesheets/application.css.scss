@@ -18,29 +18,21 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- // Typography
- h1 {
-   font-family: futura, sans-serif;
-   color: red;
-   text-align: center;
- }
-
- h2 {
-   font-family: futura, sans-serif;
-   text-align: center;
- }
-
- p {
-   font-family: futura, sans-serif;
- }
  // Navigation
  .navbar-nav {
    float: right;
  }
 
- .navbar-brand {
+ .navbar-brand a:hover {
    text-decoration: none;
+   background-color: transparent;
+   color: white;
  }
+
+ #search-form {
+   padding-top: 10px;
+ }
+
  // Body Text Area
  #body-area {
    padding-top: 50px;
@@ -131,15 +123,30 @@
    color: white;
  }
 
- // navigation
-
- #search-form {
-   padding-top: 10px;
- }
-
  // show product page
 
  #show-button .btn-primary {
    color: white;
+}
 
+ // Confirmation page (Thank_you)
+
+ #contact-form-confirmation {
+   padding-top: 50px;
+ }
+
+ // Typography
+ h1 {
+   font-family: futura, sans-serif;
+   color: red;
+   text-align: center;
+ }
+
+ h2 {
+   font-family: futura, sans-serif;
+   text-align: center;
+ }
+
+ p {
+   font-family: futura, sans-serif;
  }

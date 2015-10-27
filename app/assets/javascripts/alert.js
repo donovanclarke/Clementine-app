@@ -1,9 +1,4 @@
 $(document).ready(function(){
   debugger
-  $(".alert").delay(800).fadeOut(800);
+  $(".alert").delay(1000).fadeOut(1000);
 });
-
-
-// setTimeout(function(){
-//   $(".alert").fade
-// })

@@ -18,6 +18,10 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+// Global
+a:hover {
+  background-color: white;
+}
  // Navigation
  .navbar-nav {
    float: right;

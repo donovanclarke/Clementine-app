@@ -6,8 +6,12 @@
       <%= render 'form' %>
       <hr>
       <div class="edit-links">
-        <%= link_to 'Show', @product %> |
-        <%= link_to 'Back', products_path %>
+        <% if user_signed_in? %>
+          <%= link_to 'Show', @product %> |
+          <%= link_to 'Back', products_path %>
+        <% else %>
+          <%= link_to 'Back', products_path %>
+        <% end %>
       </div>
     </div>
     <div class="col-md-2"></div>

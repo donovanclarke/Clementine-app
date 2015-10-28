@@ -1,0 +1,12 @@
+<% if signed_in? %>
+  <h4>Add a review:</h4>
+  <%= bootstrap_form_for([@product, @product.comments.build]) do |f| %>
+    <div class="fied">
+      <%= f.text_area :body, style: "resize:none", rows: "5", cols: "40" %>
+    </div>
+
+    <div class="rating"></div>
+    <hr>
+      <%= f.submit "Submit" %>
+  <% end %>
+<% end %>

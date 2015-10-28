@@ -100,30 +100,6 @@ a:hover {
   padding-right: 250px;
 }
 
-
- // Product page index
- #new-product {
-   padding-left: 40%;
- }
-
- .product-title {
-   font-size: 1.3em;
-   text-align: center;
- }
- .product-thumbnail {
-   width: 200px;
-   height: auto;
- }
-
- .product-show-edit-delete {
-   text-align: center;
- }
-
- .product-show-edit-delete a:hover {
-   color: red;
-   text-decoration: none;
-   background-color: white;
- }
  // new product page
 
  #new-product .btn-primary {
@@ -145,6 +121,72 @@ a:hover {
    color: white;
 }
 
+#show-page {
+  padding-top: 50px;
+}
+
+#show-page-description {
+  padding-top: 50px;
+}
+
+#show-page-price {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#show-page-column1 {
+  text-align: center;
+}
+
+// show edit (product) page
+
+.edit-links {
+  text-align: center;
+}
+
+// show index page
+
+.show-index-thumbnail {
+  text-align: center;
+}
+
+.show-index-price {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.show-index-links {
+  text-align: center;
+  font-family: futura, sans-serif;
+}
+
+.show-index-links a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#new-product {
+  padding-left: 40%;
+}
+
+.product-title {
+  font-size: 1.3em;
+  text-align: center;
+}
+.product-thumbnail {
+  width: 200px;
+  height: auto;
+}
+
+.product-show-edit-delete {
+  text-align: center;
+}
+
+.product-show-edit-delete a:hover {
+  color: red;
+  text-decoration: none;
+  background-color: white;
+}
  // Confirmation page (Thank_you)
 
  #contact-form-confirmation {
@@ -154,7 +196,6 @@ a:hover {
  // Typography
  h1 {
    font-family: futura, sans-serif;
-   color: red;
    text-align: center;
  }
 

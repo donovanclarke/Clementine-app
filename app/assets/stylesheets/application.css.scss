@@ -226,6 +226,16 @@ a:hover {
    padding-top: 50px;
  }
 
+ // Comment Review
+
+ .glyphicon-remove {
+   color: black;
+ }
+
+ .glyphicon-remove :hover {
+   color: gray;
+ }
+
  // Typography
  h1 {
    font-family: futura, sans-serif;

@@ -24,6 +24,11 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><%= link_to('Profile', current_user) %></li>
+                  <% if current_user.admin? %> <!-- Admin Panel -->
+                  <li><%= link_to('Manage users', users_path) %></li>
+                  <li><%= link_to('Add product', new_product_path) %></li>
+                  <% end %> <!-- End Admin Panel -->
+                  <hr>
                   <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
                 <% else %>
                   <li><%= link_to('Login', new_user_session_path) %></li>

@@ -26,7 +26,11 @@
       </div>
       <% end %>
       <hr>
-      <%= link_to 'Back', user_path %>
+      <% if signed_in? && current_user.admin? %>
+        <%= link_to 'Back', users_path %>
+      <% else %>
+        <%= link_to 'Back', user_path %>
+      <% end %>
     </div>
     <div class="col-md-4"></div>
   </div>

@@ -8,7 +8,7 @@
       <p><%= @product.description %></p><br>
     </div>
     <div class="col-md-4" id="show-page-price">
-      <p class="show-page-price">$ <%= @product.price %></p><br>
+      <p class="show-page-price"><%= number_to_currency(@product.price) %></p><br>
       <hr>
       <div id="show-button">
         <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary" %>
@@ -18,3 +18,14 @@
   </div>
 </div>
 <hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"><%= render 'comments/new_comment' %></div>
+    <div class="col-md-4">
+      <div class="show-index-rating">
+        <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
+      </div>
+    </div>
+    <div class="col-md-4"><%= render 'comments/comment_reviews' %></div>
+  </div>
+</div>

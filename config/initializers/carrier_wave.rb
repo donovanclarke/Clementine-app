@@ -3,9 +3,9 @@ if Rails.env.production?
     config.fog_credentials = {
       # Amazon S3 Configuration
       :provider => 'AWS',
-      :aws_access_key_id => ENV['AKIAJKFLHFP7IDRDZFYA'],
-      :aws_secret_access_key => ENV['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']
+      :aws_access_key_id => ENV['AWS_ACCESS_KEY'],
+      :aws_secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
     }
-    config.fog_directory = ENV['clementine-app']
+    config.fog_directory = ENV['S3_BUCKET']
   end
 end

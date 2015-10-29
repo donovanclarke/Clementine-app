@@ -2,7 +2,7 @@
   <p class="product-title"><%= product.name %></p>
   <p><%= product.description %></p>
   <div class="show-index-thumbnail">
-    <%= image_tag(product.image_url, class: "product-thumbnail") %>
+    <%= image_tag product.picture.url, class: "product-thumbnail" %>
   </div>
   <hr>
   <div class="show-index-price">

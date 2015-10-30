@@ -3,17 +3,26 @@
 <% end %>
 
 <h1>Listing Products</h1>
- <div class="container">
+   <% @products.in_groups_of(3) do |r| %>
+   <div class="container">
     <div class="row">
         <% @products.each do |product| %>
-          <%= render product %>
+          <div class="col-md-4">
+            <%= render product %>
+          </div>
         <% end %>
       </div>
     </div>
+    <% end %>
+
+
 
 <hr>
 <div class="container" id="new-product">
   <% if user_signed_in? && current_user.admin? %>
     <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
   <% end %>
+  <div class="paginate-products">
+    <%= will_paginate @comments %>
+  </div>
 </div>

@@ -1,4 +1,4 @@
-if Rails.env.production?e
+if Rails.env.production?
   CarrierWave.configure do |config|
     config.root = Rails.root.join('tmp')
     config.cache_dir = 'carrierwave'

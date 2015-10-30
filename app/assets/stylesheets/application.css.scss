@@ -23,6 +23,9 @@ a:hover {
   background-color: transparent;
 }
 
+#profile-links .btn-info {
+  color: white;
+}
 // Alerts
 
 #alert {
@@ -230,6 +233,12 @@ a:hover {
 
  .glyphicon-remove {
    color: black;
+ }
+
+ // Edit Profile
+
+ #profile-links .btn-info {
+   color: white;
  }
 
  // Typography

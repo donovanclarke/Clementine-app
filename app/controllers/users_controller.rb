@@ -16,7 +16,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     if signed_in?
-    # figure out how to stop viewing other profiles, at this moment not able to edit other profiles other then own. 
+    # figure out how to stop viewing other profiles, at this moment not able to edit other profiles other then own.
     else
       redirect_to root_path
     end
@@ -38,6 +38,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else

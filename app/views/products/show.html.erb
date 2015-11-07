@@ -15,6 +15,10 @@
           <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary" %>
           <%= link_to 'Back', products_path, class: "btn btn-primary" %>
         <% else %>
+          <%= form_tag "/payments/create" do %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
+          <hr>
           <%= link_to 'Back', products_path, class: "btn btn-primary" %>
         <% end %>
       </div>

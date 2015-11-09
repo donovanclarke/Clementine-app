@@ -15,8 +15,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    if signed_in? 
-    # figure out how to stop viewing other profiles, at this moment not able to edit other profiles other then own.
+    if signed_in? && current_user.id
     else
       redirect_to root_path
     end

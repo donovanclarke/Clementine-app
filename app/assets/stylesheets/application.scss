@@ -17,6 +17,8 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
 
 // Global
 a:hover {
@@ -243,8 +245,26 @@ a:hover {
 
  // Registration Page
 
- #registration-page {
+ #new-registration {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+ }
 
+ // Forgot Password Page
+
+ #forgot-password {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+ }
+
+ // Sign in Page
+
+ #sign_in_page {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
  }
 
  // Typography

@@ -85,8 +85,17 @@ a:hover {
   .navbar-brand a:hover {
     letter-spacing: 0 !important;
   }
+
+  #search-form {
+    display: none !important;
+  }
 }
 
+@media screen and (max-width: 986px) {
+  #search-form {
+    display: none !important;
+  }
+}
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
   background-color: #eb453f;
 }

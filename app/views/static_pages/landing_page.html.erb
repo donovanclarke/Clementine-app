@@ -47,7 +47,7 @@
       <% @posts.each do |post| %>
         <div class="news-container">
           <p class="news-title"><%= post.title %></p>
-          <p class="news-time">Posted @ <%= post.created_at %></p>
+          <p class="news-time">Posted @ <%= post.created_at.strftime("%b %d, %Y") %> <%= post.created_at.strftime("at %I:%M%p") %></p>
           <p class="news-body"><%= post.body %></p>
         </div>
       <% end %>

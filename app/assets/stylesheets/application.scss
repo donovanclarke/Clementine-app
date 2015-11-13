@@ -69,6 +69,23 @@ a:hover {
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: transparent;
 }
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  color: white;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #eb453f;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #eb453f;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #eb453f;
+}
+
  .navbar-inverse {
    background-color: #eb453f;
    border-color: #eb453f;
@@ -153,13 +170,17 @@ a:hover {
  // Landing Page
 
 #carousel-landing-page {
-  max-width: 500px;
+  max-width: 100%;
   max-height: auto;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 #carousel {
-  margin: 0 auto;
-  width: 500px;
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .news-container {

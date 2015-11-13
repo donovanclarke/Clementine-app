@@ -1,4 +1,8 @@
-FactoryGirl.define do
+FactoryGirl.define do  factory :post do
+    title "MyString"
+body "MyText"
+  end
+
   factory :user do
     email "test@newuser.com"
     password "Password123"

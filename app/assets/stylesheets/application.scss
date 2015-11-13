@@ -48,12 +48,40 @@ a:hover {
    text-decoration: none;
    background-color: transparent;
    color: white;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+ }
+
+ .navbar-brand a {
+   background-color: transparent;
+   text-decoration: none;
+   color: white;
+   font-weight: 100;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+ }
+
+ .navbar-inverse .navbar-nav > li > a {
+   color: white;
+ }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+ .navbar-inverse {
+   background-color: #eb453f;
+   border-color: #eb453f;
  }
 
  #search-form {
    padding-top: 10px;
  }
+// About Page
 
+.about-icon {
+  text-align: center;
+}
  // Pagination styling
 
  .apple_pagination {
@@ -132,6 +160,19 @@ a:hover {
 #carousel {
   margin: 0 auto;
   width: 500px;
+}
+
+.news-container {
+  background-color: #F7F9FA;
+  padding: 20px;
+}
+
+.news-title {
+  font-size: 1.2em;
+}
+
+.news-time {
+  font-size: 0.8em;
 }
 
  // new product page

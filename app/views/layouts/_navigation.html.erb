@@ -27,6 +27,8 @@
                   <% if current_user.admin? %> <!-- Admin Panel -->
                   <li><%= link_to('Manage users', users_path) %></li>
                   <li><%= link_to('Add product', new_product_path) %></li>
+                  <li><%= link_to('New blog post', new_post_path) %></li>
+                  <li><%= link_to('Manage blog post', posts_path) %></li>
                   <% end %> <!-- End Admin Panel -->
                   <hr>
                   <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
@@ -55,4 +57,5 @@
           </ul>
         </div>
       </div>
+    </div>
   </nav>

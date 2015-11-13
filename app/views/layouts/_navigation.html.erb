@@ -13,27 +13,27 @@
       </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "About us", static_pages_about_path %></li>
-            <li><%= link_to "Contact us", static_pages_contact_path %></li>
-            <li><%= link_to "Products", products_path %></li>
+            <li><%= link_to('<i class="fa fa-info"></i> About us'.html_safe, static_pages_about_path) %></li>
+            <li><%= link_to('<i class="fa fa-inbox"></i> Contact us'.html_safe, static_pages_contact_path) %></li>
+            <li><%= link_to('<i class="fa fa-tag"></i> Products'.html_safe, products_path) %></li>
             <li>
               <% if user_signed_in? %>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <%= current_user.first_name %> <b class="caret"></b>
+                  <i class="fa fa-user"></i> <%= current_user.first_name %> <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to('Profile', current_user) %></li>
+                  <li><%= link_to('<i class="fa fa-user"></i> Profile'.html_safe, current_user) %></li>
                   <% if current_user.admin? %> <!-- Admin Panel -->
-                  <li><%= link_to('Manage users', users_path) %></li>
-                  <li><%= link_to('Add product', new_product_path) %></li>
-                  <li><%= link_to('New blog post', new_post_path) %></li>
-                  <li><%= link_to('Manage blog post', posts_path) %></li>
+                  <li><%= link_to('<i class="fa fa-users"></i> Manage users'.html_safe, users_path) %></li>
+                  <li><%= link_to('<i class="fa fa-tags"></i> Add product'.html_safe, new_product_path) %></li>
+                  <li><%= link_to('<i class="fa fa-file"></i> New blog post'.html_safe, new_post_path) %></li>
+                  <li><%= link_to('<i class="fa fa-file-text"></i> Manage blog post'.html_safe, posts_path) %></li>
                   <% end %> <!-- End Admin Panel -->
                   <hr>
-                  <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+                  <li><%= link_to('<i class="fa fa-sign-out"></i> Logout'.html_safe, destroy_user_session_path, :method => :delete) %></li>
                 <% else %>
-                  <li><%= link_to('Login', new_user_session_path) %></li>
+                  <li><%= link_to('<i class="fa fa-sign-in"></i> Login'.html_safe, new_user_session_path) %></li>
                   <li>
                     <div class="field" id="search-form">
                       <%= bootstrap_form_tag url: products_path, method: "get", layout: :inline do |form| %>

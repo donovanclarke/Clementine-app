@@ -8,7 +8,9 @@
     <div class="row">
         <% @products.each do |product| %>
           <div class="col-md-4">
-            <%= render product %>
+            <div class="product-container">
+              <%= render product %>
+            </div>
           </div>
         <% end %>
       </div>

@@ -14,8 +14,14 @@
         <% if user_signed_in? && current_user.admin? %>
           <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-primary" %>
           <%= link_to 'Back', products_path, class: "btn btn-primary" %>
+          <hr>
+          <%= form_tag "/payments/create" do %>
+          <%= hidden_field_tag(:product_id, @product.id) %>
+            <%= render partial: "shared/stripe_checkout_button" %>
+          <% end %>
         <% else %>
           <%= form_tag "/payments/create" do %>
+          <%= hidden_field_tag(:product_id, @product.id) %>
             <%= render partial: "shared/stripe_checkout_button" %>
           <% end %>
           <hr>

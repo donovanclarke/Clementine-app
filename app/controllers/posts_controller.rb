@@ -4,7 +4,11 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    if signed_in? && current_user.admin?
+      @posts = Post.all
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /posts/1
@@ -14,7 +18,11 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
+    if signed_in? && current_user.admin?
+      @post = Post.new
+    else
+      redirect_to root_path
+    end
   end
 
   # GET /posts/1/edit

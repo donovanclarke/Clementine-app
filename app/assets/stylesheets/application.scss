@@ -66,12 +66,24 @@ a:hover {
    color: white;
  }
 
+ .navbar-inverse .navbar-nav > li > a:hover {
+   color: #F7F9FA;
+ }
+
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: transparent;
 }
 @media screen and (max-width: 400px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: white !important;
+  }
+
+  .navbar-brand a {
+    letter-spacing: 0 !important;
+  }
+
+  .navbar-brand a:hover {
+    letter-spacing: 0 !important;
   }
 }
 

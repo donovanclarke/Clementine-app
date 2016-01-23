@@ -1,8 +1,10 @@
 <h2>Log in</h2>
 <div class="container">
   <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4" id="sign_in_page">
+    <div class="col-md-4 col-md-offset-4 col-sm-12" id="sign_in_page">
+      <div class="col-sm-12" id="sign-in-logo">
+        <%= image_tag "sitelogo.png" %>
+      </div>
       <%= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="field">
           <%= f.email_field :email, autofocus: true %>
@@ -19,12 +21,11 @@
         <% end -%>
 
         <div class="actions">
-          <%= f.submit "Log in" %>
+          <%= f.submit "Login", class: "btn btn-default devise-login form-control" %>
           <hr>
           <%= render "devise/shared/links" %>
         </div>
       <% end %>
     </div>
-    <div class="col-md-4"></div>
   </div>
 </div>

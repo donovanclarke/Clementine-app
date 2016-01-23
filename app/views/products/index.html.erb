@@ -2,8 +2,9 @@
   <p id="notice" class="alert alert-info"><%= notice %></p>
 <% end %>
 
-<h1>Listing Products</h1>
+  <% if @products.count > 0 %>
    <% @products.in_groups_of(3) do |r| %>
+   <h1>Listing Products</h1>
    <div class="container">
     <div class="row">
         <% @products.each do |product| %>
@@ -16,15 +17,34 @@
       </div>
     </div>
     <% end %>
-
-
-
-<hr>
-<div class="container" id="new-product">
-  <% if user_signed_in? && current_user.admin? %>
-    <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
-  <% end %>
-  <div class="paginate-products">
-    <%= will_paginate @comments %>
-  </div>
-</div>
+    <hr>
+    <div class="container" id="new-product">
+      <% if user_signed_in? && current_user.admin? %>
+        <%= link_to 'New Product', new_product_path, class: "btn btn-primary" %>
+      <% end %>
+      <div class="paginate-products">
+        <%= will_paginate @comments %>
+      </div>
+    </div>
+    <% else %>
+    <div class="container" id="noproduct-panel">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="noproduct-panel">
+            <div class="col-sm-12 title">
+              <i class="fa fa-shopping-cart fa-5x"></i>
+            </div>
+            <div class="col-sm-12 body">
+              <% if user_signed_in? && current_user.admin? %>
+                <h3>Your store is empty!</h3>
+                <h4>Would you like to add an item to your store? Click <%= link_to 'here', new_product_path %> to do that!</h4>
+                <% else %>
+                  <h3>This store is empty!</h3>
+                  <h4>If you are the administrator please login to add a product.</h4>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>

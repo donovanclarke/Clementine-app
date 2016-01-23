@@ -348,7 +348,16 @@ a:hover {
    padding-top: 10px;
    border-radius: 5px;
  }
+#new-registration .devise-signup {
+  background-color: #4A90E2;
+  color: #fff;
+  border-color: #4A90E2;
+}
 
+#signup-links {
+  margin-top: 20px;
+  text-align: center;
+}
  // Forgot Password Page
 
  #forgot-password {

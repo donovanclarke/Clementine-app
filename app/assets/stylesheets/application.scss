@@ -243,6 +243,23 @@ a:hover {
 
  #new-page .btn-primary { color: white; }
 
+ #new-product-form {
+   background-color: #F7F9FA;
+   padding-top: 10px;
+   border-radius: 5px;
+   .create-product {
+     background-color: #4A90E2;
+     color: #fff;
+     border-color: #4A90E2;
+   }
+ }
+
+#new-product-title {
+  text-align: center;
+  i {
+    color: #4A90E2;
+  }
+}
  // product index
 
  .product-container {

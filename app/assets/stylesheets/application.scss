@@ -44,14 +44,6 @@ a:hover {
    float: right;
  }
 
- .navbar-brand a:hover {
-   text-decoration: none;
-   background-color: transparent;
-   color: white;
-   font-weight: 100;
-   text-transform: uppercase;
-   letter-spacing: 0.1em;
- }
 
  .navbar-brand a {
    background-color: transparent;
@@ -60,6 +52,14 @@ a:hover {
    font-weight: 100;
    text-transform: uppercase;
    letter-spacing: 0.1em;
+   a:hover {
+     text-decoration: none;
+     background-color: transparent;
+     color: white;
+     font-weight: 100;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+   }
  }
 
  .navbar-inverse .navbar-nav > li > a {
@@ -80,10 +80,9 @@ a:hover {
 
   .navbar-brand a {
     letter-spacing: 0 !important;
-  }
-
-  .navbar-brand a:hover {
-    letter-spacing: 0 !important;
+    a:hover {
+      letter-spacing: 0 !important;
+    }
   }
 
   #search-form {
@@ -96,7 +95,8 @@ a:hover {
     display: none !important;
   }
 }
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
   background-color: #eb453f;
 }
 
@@ -104,7 +104,8 @@ a:hover {
   border-color: #eb453f;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
   border-color: #eb453f;
 }
 
@@ -113,14 +114,10 @@ a:hover {
    border-color: #eb453f;
  }
 
- #search-form {
-   padding-top: 10px;
- }
+ #search-form { padding-top: 10px; }
 // About Page
 
-.about-icon {
-  text-align: center;
-}
+.about-icon { text-align: center; }
  // Pagination styling
 
  .apple_pagination {
@@ -231,70 +228,51 @@ a:hover {
   padding: 20px;
 }
 
-.news-title {
-  font-size: 1.2em;
-}
+.news-title { font-size: 1.2em; }
 
-.news-time {
-  font-size: 0.8em;
-}
+.news-time { font-size: 0.8em; }
 
  // new product page
 
- #new-product .btn-primary {
-   color: white;
- }
+ #new-product .btn-primary { color: white; }
 
  #new-page {
    padding-left: 40%;
    padding-bottom: 60px;
  }
 
- #new-page .btn-primary {
-   color: white;
- }
+ #new-page .btn-primary { color: white; }
 
  // product index
 
  .product-container {
    background-color: #F7F9FA;
    padding: 20px;
+   min-height: 424px;
  }
 
  // show product page
 
- #show-button .btn-primary {
-   color: white;
-}
+ #show-button .btn-primary { color: white; }
 
-#show-page {
-  padding-top: 50px;
-}
+#show-page { padding-top: 50px; }
 
-#show-page-description {
-  padding-top: 50px;
-}
+#show-page-description { padding-top: 50px; }
 
 #show-page-price {
   text-align: center;
   padding-top: 50px;
 }
 
-#show-page-column1 {
-  text-align: center;
-}
+#show-page-column1 { text-align: center; }
 
 // show edit (product) page
 
-.edit-links {
-  text-align: center;
-}
+.edit-links { text-align: center; }
 
 // show index page
 
-.show-index-thumbnail {
-  text-align: center;
-}
+.show-index-thumbnail { text-align: center; }
 
 .show-index-price {
   text-align: center;
@@ -304,16 +282,17 @@ a:hover {
 .show-index-links {
   text-align: center;
   font-family: futura, sans-serif;
+  a {
+    padding-right: 10px;
+    text-decoration: none;
+    a:hover {
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
 }
 
-.show-index-links a:hover {
-  text-decoration: none;
-  background-color: transparent;
-}
-
-#new-product {
-  padding-left: 40%;
-}
+#new-product { padding-left: 40%; }
 
 .product-title {
   font-size: 1.3em;
@@ -324,9 +303,7 @@ a:hover {
   height: auto;
 }
 
-.product-show-edit-delete {
-  text-align: center;
-}
+.product-show-edit-delete { text-align: center; }
 
 .product-show-edit-delete a:hover {
   color: red;
@@ -334,26 +311,18 @@ a:hover {
   background-color: white;
 }
 
-.show-index-rating {
-  text-align: center;
-}
+.show-index-rating { text-align: center; }
  // Confirmation page (Thank_you)
 
- #contact-form-confirmation {
-   padding-top: 50px;
- }
+ #contact-form-confirmation { padding-top: 50px; }
 
  // Comment Review
 
- .glyphicon-remove {
-   color: black;
- }
+ .glyphicon-remove { color: black; }
 
  // Edit Profile
 
- #profile-links .btn-info {
-   color: white;
- }
+ #profile-links .btn-info { color: white; }
 
  // Registration Page
 

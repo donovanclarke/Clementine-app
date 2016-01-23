@@ -35,9 +35,12 @@
               <i class="fa fa-shopping-cart fa-5x"></i>
             </div>
             <div class="col-sm-12 body">
-              <h3>Your store is empty!</h3>
               <% if user_signed_in? && current_user.admin? %>
+                <h3>Your store is empty!</h3>
                 <h4>Would you like to add an item to your store? Click <%= link_to 'here', new_product_path %> to do that!</h4>
+                <% else %>
+                  <h3>This store is empty!</h3>
+                  <h4>If you are the administrator please login to add a product.</h4>
               <% end %>
             </div>
           </div>

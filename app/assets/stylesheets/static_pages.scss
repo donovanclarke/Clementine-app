@@ -1,0 +1,36 @@
+// Landing Page
+
+#carousel-landing-page {
+ max-width: 100%;
+ max-height: auto;
+ padding-left: auto;
+ padding-right: auto;
+}
+
+#carousel {
+ width: 100%;
+ height: auto;
+ padding-left: 0;
+ padding-right: 0;
+}
+
+.news-container {
+ background-color: #F7F9FA;
+ padding: 20px;
+}
+
+.news-title { font-size: 1.2em; }
+
+.news-time { font-size: 0.8em; }
+
+ // Contact Page
+
+ #contact-page {
+   text-align: center;
+ }
+
+ #contact-page a:hover {
+   color: red;
+   background-color: white;
+   text-decoration: none;
+ }

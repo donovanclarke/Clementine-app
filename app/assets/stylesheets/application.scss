@@ -199,50 +199,6 @@ a:hover {
 
  #profile-links .btn-info { color: white; }
 
- // Registration Page
-
- #new-registration {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
-#new-registration .devise-signup {
-  background-color: #4A90E2;
-  color: #fff;
-  border-color: #4A90E2;
-}
-
-#signup-links {
-  margin-top: 20px;
-  text-align: center;
-}
- // Forgot Password Page
-
- #forgot-password {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
-
- // Sign in Page
-
-#sign-in-logo {
-  text-align: center;
-    img {
-      width: 70px;
-    }
-}
- #sign_in_page {
-   background-color: #F7F9FA;
-   padding-top: 10px;
-   border-radius: 5px;
- }
-
- #sign_in_page .devise-login {
-   background-color: #4A90E2;
-   color: #fff;
-   border-color: #4A90E2;
- }
  // Typography
  h1 {
    font-family: futura, sans-serif;

@@ -1,3 +1,25 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Sign in Page
+
+#sign-in-logo {
+ text-align: center;
+   img {
+     width: 70px;
+   }
+}
+#sign_in_page {
+  background-color: #F7F9FA;
+  padding-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #CFD5DB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#sign_in_page .devise-login {
+  background-color: #4A90E2;
+  color: #fff;
+  border-color: #4A90E2;
+}

@@ -55,3 +55,19 @@
     color: #4A90E2;
   }
 }
+
+// Post Edit Page
+
+#post-new .newpost-panel {
+  background-color: #F7F9FA;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #CFD5DB;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  height: 500px;
+}
+
+#post-new .back {
+  text-align: center;
+}

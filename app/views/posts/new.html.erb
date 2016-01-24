@@ -1,11 +1,14 @@
 <h1>New Post</h1>
-<div class="container">
+<div class="container" id="post-new">
   <div class="row">
-    <div class="col-md-4"></div>
-    <div class="col-md-4">
-      <%= render 'form' %>
-      <%= link_to 'Back', posts_path %>
+    <div class="col-md-8 col-md-offset-2">
+      <div class="newpost-panel">
+        <%= render 'form' %>
+      </div>
+      <hr>
+      <div class="back">
+        <%= link_to "Dont want to post something? Let's go back!", posts_path %>
+      </div>
     </div>
-    <div class="col-md-4"></div>
   </div>
 </div>

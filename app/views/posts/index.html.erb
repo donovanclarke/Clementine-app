@@ -1,12 +1,13 @@
 <p id="notice"><%= notice %></p>
 <div class="container" id="post-index">
   <div class="row">
+    <% if @posts.count > 0 %>
     <div class="col-md-12">
       <h1>Blog Posts</h1>
     </div>
     <% @posts.each do |post| %>
     <div class="col-md-6 col-md-offset-3">
-      <div class="post-container">
+      <div class="post-panel">
         <h4><%= post.title %></h4>
         <p><%= post.body %></p>
         <div class="links">
@@ -17,8 +18,10 @@
       </div>
     </div>
     <% end %>
+    <% else %>
+      <%= render 'posts/emptyblog' %>
+    <% end %>
   </div>
-
   <hr>
   <div class="col-md-12 post-links">
     <%= link_to 'New Post', new_post_path, class: "btn btn-primary new-post" %>

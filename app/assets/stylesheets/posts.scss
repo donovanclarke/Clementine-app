@@ -9,7 +9,7 @@
 }
 #post-index .new-post { color: #fff; }
 #post-index .post-links { text-align: center; }
-#post-index .post-container {
+#post-index .post-panel {
   background-color: #F7F9FA;
   padding: 20px;
   border-radius: 3px;
@@ -27,5 +27,31 @@
     a:visited {
       color: #337ab7;
     }
+  }
+}
+#post-index .blog {
+  margin-top: 30px;
+}
+#post-index .blog-panel {
+  background-color: #F7F9FA;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #CFD5DB;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  height: 500px;
+  .title {
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+#post-index .body {
+  text-align: center;
+}
+
+#post-index {
+  i {
+    color: #4A90E2;
   }
 }

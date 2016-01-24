@@ -35,16 +35,18 @@
 }
 
 .noproduct-panel {
-  min-height: 600px;
+  min-height: 500px;
   width: auto;
   padding: 20px;
   border-radius: 3px;
   background-color: #F7F9FA;
+  border: 1px solid #CFD5DB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 #noproduct-panel {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
   .title {
     padding-top: 130px;
     color: #A9CDE2;

@@ -1,3 +1,31 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#post-index {
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+#post-index .new-post { color: #fff; }
+#post-index .post-links { text-align: center; }
+#post-index .post-container {
+  background-color: #F7F9FA;
+  padding: 20px;
+  border-radius: 3px;
+  border: 1px solid #CFD5DB;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+#post-index .links {
+  text-align: center;
+  margin-bottom: 5px;
+  a {
+    color: #337ab7;
+    text-decoration: none;
+    margin-right: 20px;
+    a:visited {
+      color: #337ab7;
+    }
+  }
+}
